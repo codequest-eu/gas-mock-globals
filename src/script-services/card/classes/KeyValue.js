@@ -1,75 +1,75 @@
-const set = require('lodash.set')
+const set = require('lodash.set');
 
-const Action = require('./Action')
-const Widget = require('./Widget')
-const Button = require('./Button')
-const OpenLink = require('./OpenLink')
+const Action = require('./Action');
+const Widget = require('./Widget');
+const Button = require('./Button');
+const OpenLink = require('./OpenLink');
 
 class KeyValue extends Widget {
   setBottomLabel (bottomLabel) {
-    this._data.bottomLabel = bottomLabel
+    this._data.bottomLabel = bottomLabel;
 
-    return this
+    return this;
   }
 
   setButton (button) {
     if ((button instanceof Button) === false) {
-      throw new Error('Invalid value passed for "setButton"')
+      throw new Error('Invalid value passed for "setButton"');
     }
 
-    this._data.textButton = button.getData()
+    this._data.textButton = button.getData();
 
-    return this
+    return this;
   }
 
   setContent (content) {
-    this._data.content = content
+    this._data.content = content;
 
-    return this
+    return this;
   }
 
   setIconUrl (iconUrl) {
-    this._data.iconUrl = iconUrl
+    this._data.iconUrl = iconUrl;
 
-    return this
+    return this;
   }
 
   setMultiline (multiline) {
-    this._data.multiline = multiline
+    this._data.multiline = multiline;
 
-    return this
+    return this;
   }
 
   setOnClickAction (onClickAction) {
     if ((onClickAction instanceof Action) === false) {
-      throw new Error('Invalid value passed for "setOnClickAction"')
+      throw new Error('Invalid value passed for "setOnClickAction"');
     }
 
-    set(this._data, 'onClick.action', onClickAction.getData())
+    set(this._data, 'onClick.action', onClickAction.getData());
 
-    return this
+    return this;
   }
 
   setOpenLink (openLink) {
     if ((openLink instanceof OpenLink) === false) {
-      throw new Error('Invalid value passed for "setOpenLink"')
+      throw new Error('Invalid value passed for "setOpenLink"');
     }
 
     // TODO: check the name of the property
-    this._data.openLink = openLink.getData()
+    this._data.openLink = openLink.getData();
 
-    return this
+    return this;
   }
 
   setTopLabel (topLabel) {
-    this._data.topLabel = topLabel
+    this._data.topLabel = topLabel;
 
-    return this
+    return this;
   }
 
   getData () {
-    return { keyValue: super.getData() }
+    return { keyValue: super.getData() };
   }
 }
 
-module.exports = KeyValue
+module.exports = KeyValue;

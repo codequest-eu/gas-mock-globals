@@ -1,19 +1,19 @@
-const Action = require('../../../src/card/classes/Action')
+const Action = require('../../../src/card/classes/Action');
 
 describe('Action', () => {
   it('Should set the function name', () => {
     const data = new Action()
       .setFunctionName('test-fn-name')
-      .getData()
+      .getData();
 
-    expect(data).toEqual({ actionMethodName: 'test-fn-name' })
-  })
+    expect(data).toEqual({ actionMethodName: 'test-fn-name' });
+  });
 
   it('Should set the parameters', () => {
     const data = new Action()
       .setParameters('test-parameters')
-      .getData()
+      .getData();
 
-    expect(data).toEqual({ parameters: 'test-parameters' })
-  })
-})
+    expect(data).toEqual({ parameters: 'test-parameters' });
+  });
+});

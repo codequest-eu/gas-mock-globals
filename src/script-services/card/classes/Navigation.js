@@ -1,38 +1,38 @@
-const BaseClass = require('../../../helpers/BaseClass')
-const Card = require('./Card')
+const BaseClass = require('../../../helpers/BaseClass');
+const Card = require('./Card');
 
 class Navigation extends BaseClass {
   constructor () {
-    super()
-    this._data.cardNavigations = []
+    super();
+    this._data.cardNavigations = [];
   }
 
   pushCard (card) {
     if ((card instanceof Card) === false) {
-      throw new Error('Invalid value passed for "pushCard"')
+      throw new Error('Invalid value passed for "pushCard"');
     }
     this._data
       .cardNavigations
-      .push({ pushCard: card.getData() })
-    return this
+      .push({ pushCard: card.getData() });
+    return this;
   }
 
   updateCard (card) {
     if ((card instanceof Card) === false) {
-      throw new Error('Invalid value passed for "updateCard"')
+      throw new Error('Invalid value passed for "updateCard"');
     }
     this._data
       .cardNavigations
-      .push({ updateCard: card.getData() })
-    return this
+      .push({ updateCard: card.getData() });
+    return this;
   }
 
   popCard () {
     this._data
       .cardNavigations
-      .push({ popCard: null })
-    return this
+      .push({ popCard: null });
+    return this;
   }
 }
 
-module.exports = Navigation
+module.exports = Navigation;

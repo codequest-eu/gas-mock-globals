@@ -3,4 +3,4 @@
 class Blob {
 }
 
-module.exports = Blob
+module.exports = Blob;

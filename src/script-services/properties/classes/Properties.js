@@ -1,44 +1,44 @@
 class Properties {
   constructor () {
-    this._data = {}
+    this._data = {};
   }
 
   deleteAllProperties () {
-    this._data = {}
+    this._data = {};
 
-    return this
+    return this;
   }
 
   deleteProperty (key) {
-    delete this._data[key]
+    delete this._data[key];
 
-    return this
+    return this;
   }
 
   getKeys () {
-    return Object.keys(this._data)
+    return Object.keys(this._data);
   }
 
   getProperties () {
-    return this._data
+    return this._data;
   }
 
   getProperty (key) {
-    return this._data[key] || null
+    return this._data[key] || null;
   }
 
   setProperties (properties = {}, deleteAllOthers = false) {
     this._data = Object
-      .assign(deleteAllOthers ? {} : this._data, properties)
+      .assign(deleteAllOthers ? {} : this._data, properties);
 
-    return this
+    return this;
   }
 
   setProperty (key, value) {
-    this._data[key] = value
+    this._data[key] = value;
 
-    return this
+    return this;
   }
 }
 
-module.exports = Properties
+module.exports = Properties;

@@ -4,12 +4,12 @@ class Logger {
   }
 
   static getLog () {
-    return ''
+    return '';
   }
 
   static log (string) {
-    console.log(string)
+    console.log(string);
   }
 }
 
-module.exports = Logger
+module.exports = Logger;

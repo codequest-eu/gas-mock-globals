@@ -1,23 +1,23 @@
-const BaseClass = require('../../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass');
 
 class Action extends BaseClass {
   setFunctionName (functionName) {
-    this._data.actionMethodName = functionName
+    this._data.actionMethodName = functionName;
 
-    return this
+    return this;
   }
 
   setLoadIndicator (loadIndicator) {
-    this._data.actionMethodName = loadIndicator
+    this._data.actionMethodName = loadIndicator;
 
-    return this
+    return this;
   }
 
   setParameters (parameters) {
-    this._data.parameters = parameters
+    this._data.parameters = parameters;
 
-    return this
+    return this;
   }
 }
 
-module.exports = Action
+module.exports = Action;

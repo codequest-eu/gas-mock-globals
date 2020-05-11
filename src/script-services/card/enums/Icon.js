@@ -30,4 +30,4 @@ module.exports = {
   TRAIN: 'TRAIN',
   VIDEO_CAMERA: 'VIDEO_CAMERA',
   VIDEO_PLAY: 'VIDEO_PLAY',
-}
+};

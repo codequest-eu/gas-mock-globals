@@ -1,11 +1,11 @@
 class BaseClass {
   constructor () {
-    this._data = {}
+    this._data = {};
   }
 
   getData () {
-    return this._data
+    return this._data;
   }
 }
 
-module.exports = BaseClass
+module.exports = BaseClass;

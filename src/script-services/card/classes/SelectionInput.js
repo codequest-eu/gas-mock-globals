@@ -1,34 +1,34 @@
-const Widget = require('./Widget')
+const Widget = require('./Widget');
 
 class SelectionInput extends Widget {
   constructor () {
-    super()
-    this._data.items = []
+    super();
+    this._data.items = [];
   }
 
   addItem (text, value, selected) {
-    this._data.items.push({ text, value, selected })
+    this._data.items.push({ text, value, selected });
 
-    return this
+    return this;
   }
 
   setFieldName (fieldName) {
-    this._data.text = fieldName
+    this._data.text = fieldName;
 
-    return this
+    return this;
   }
 
   setTitle (title) {
-    this._data.title = title
+    this._data.title = title;
 
-    return this
+    return this;
   }
 
   setType (type) {
-    this._data.type = type
+    this._data.type = type;
 
-    return this
+    return this;
   }
 }
 
-module.exports = SelectionInput
+module.exports = SelectionInput;

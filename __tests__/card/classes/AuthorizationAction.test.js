@@ -1,11 +1,11 @@
-const AuthorizationAction = require('../../../src/card/classes/AuthorizationAction')
+const AuthorizationAction = require('../../../src/card/classes/AuthorizationAction');
 
 describe('AuthorizationAction', () => {
   it('Should set the function name', () => {
     const data = new AuthorizationAction()
       .setAuthorizationUrl('test-auth-url')
-      .getData()
+      .getData();
 
-    expect(data).toEqual({ url: 'test-auth-url' })
-  })
-})
+    expect(data).toEqual({ url: 'test-auth-url' });
+  });
+});

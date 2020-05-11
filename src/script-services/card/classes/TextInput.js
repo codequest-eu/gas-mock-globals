@@ -1,67 +1,67 @@
-const Widget = require('./Widget')
-const Action = require('./Action')
-const Suggestions = require('./Suggestions')
+const Widget = require('./Widget');
+const Action = require('./Action');
+const Suggestions = require('./Suggestions');
 
 class TextInput extends Widget {
   setFieldName (fieldName) {
-    this._data.text = fieldName
+    this._data.text = fieldName;
 
-    return this
+    return this;
   }
 
   setHint (hint) {
-    this._data.hint = hint
+    this._data.hint = hint;
 
-    return this
+    return this;
   }
 
   setMultiline (multiline) {
-    this._data.multiline = multiline
+    this._data.multiline = multiline;
 
-    return this
+    return this;
   }
 
   setOnChangeAction (action) {
     if ((action instanceof Action) === false) {
-      throw new Error('Invalid value passed for "setOnChangeAction"')
+      throw new Error('Invalid value passed for "setOnChangeAction"');
     }
 
-    this._data.action = action
+    this._data.action = action;
 
-    return this
+    return this;
   }
 
   setSuggestions (suggestions) {
     if ((suggestions instanceof Suggestions) === false) {
-      throw new Error('Invalid value passed for "setSuggestionsAction"')
+      throw new Error('Invalid value passed for "setSuggestionsAction"');
     }
 
-    this._data.suggestions = suggestions
+    this._data.suggestions = suggestions;
 
-    return this
+    return this;
   }
 
   setSuggestionsAction (suggestionsAction) {
     if ((suggestionsAction instanceof Action) === false) {
-      throw new Error('Invalid value passed for "setSuggestionsAction"')
+      throw new Error('Invalid value passed for "setSuggestionsAction"');
     }
 
-    this._data.suggestionsAction = suggestionsAction
+    this._data.suggestionsAction = suggestionsAction;
 
-    return this
+    return this;
   }
 
   setTitle (title) {
-    this._data.title = title
+    this._data.title = title;
 
-    return this
+    return this;
   }
 
   setValue (value) {
-    this._data.value = value
+    this._data.value = value;
 
-    return this
+    return this;
   }
 }
 
-module.exports = TextInput
+module.exports = TextInput;

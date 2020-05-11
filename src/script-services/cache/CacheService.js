@@ -1,17 +1,17 @@
-const Cache = require('./classes/Cache')
+const Cache = require('./classes/Cache');
 
 class CacheService {
   static getDocumentationCache () {
-    return new Cache()
+    return new Cache();
   }
 
   static getScriptCache () {
-    return new Cache()
+    return new Cache();
   }
 
   static getUserCache () {
-    return new Cache()
+    return new Cache();
   }
 }
 
-module.exports = CacheService
+module.exports = CacheService;

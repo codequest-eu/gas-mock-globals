@@ -1,5 +1,5 @@
-const BaseClass = require('../../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass');
 
 class Widget extends BaseClass {}
 
-module.exports = Widget
+module.exports = Widget;

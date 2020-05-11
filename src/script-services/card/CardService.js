@@ -1,152 +1,152 @@
 // classes
-const Action = require('./classes/Action')
-const ActionResponseBuilder = require('./classes/ActionResponseBuilder')
-const AuthorizationAction = require('./classes/AuthorizationAction')
-const ButtonSet = require('./classes/ButtonSet')
-const CardAction = require('./classes/CardAction')
-const CardBuilder = require('./classes/CardBuilder')
-const CardHeader = require('./classes/CardHeader')
-const CardSection = require('./classes/CardSection')
-const Image = require('./classes/Image')
-const ImageButton = require('./classes/ImageButton')
-const KeyValue = require('./classes/KeyValue')
-const Navigation = require('./classes/Navigation')
-const Notification = require('./classes/Notification')
-const OpenLink = require('./classes/OpenLink')
-const SelectionInput = require('./classes/SelectionInput')
-const Suggestions = require('./classes/Suggestions')
-const TextButton = require('./classes/TextButton')
-const TextInput = require('./classes/TextInput')
-const TextParagraph = require('./classes/TextParagraph')
-const UniversalActionResponseBuilder = require('./classes/UniversalActionResponseBuilder')
+const Action = require('./classes/Action');
+const ActionResponseBuilder = require('./classes/ActionResponseBuilder');
+const AuthorizationAction = require('./classes/AuthorizationAction');
+const ButtonSet = require('./classes/ButtonSet');
+const CardAction = require('./classes/CardAction');
+const CardBuilder = require('./classes/CardBuilder');
+const CardHeader = require('./classes/CardHeader');
+const CardSection = require('./classes/CardSection');
+const Image = require('./classes/Image');
+const ImageButton = require('./classes/ImageButton');
+const KeyValue = require('./classes/KeyValue');
+const Navigation = require('./classes/Navigation');
+const Notification = require('./classes/Notification');
+const OpenLink = require('./classes/OpenLink');
+const SelectionInput = require('./classes/SelectionInput');
+const Suggestions = require('./classes/Suggestions');
+const TextButton = require('./classes/TextButton');
+const TextInput = require('./classes/TextInput');
+const TextParagraph = require('./classes/TextParagraph');
+const UniversalActionResponseBuilder = require('./classes/UniversalActionResponseBuilder');
 
 // enums
-const ComposeEmailType = require('./enums/ComposedEmailType')
-const Icon = require('./enums/Icon')
-const ImageStyle = require('./enums/ImageStyle')
-const LoadIndicator = require('./enums/LoadIndicator')
-const NotificationType = require('./enums/NotificationType')
-const OnClose = require('./enums/OnClose')
-const OpenAs = require('./enums/OpenAs')
-const SelectionInputType = require('./enums/SelectionInputType')
-const TextButtonStyle = require('./enums/TextButtonStyle')
+const ComposeEmailType = require('./enums/ComposedEmailType');
+const Icon = require('./enums/Icon');
+const ImageStyle = require('./enums/ImageStyle');
+const LoadIndicator = require('./enums/LoadIndicator');
+const NotificationType = require('./enums/NotificationType');
+const OnClose = require('./enums/OnClose');
+const OpenAs = require('./enums/OpenAs');
+const SelectionInputType = require('./enums/SelectionInputType');
+const TextButtonStyle = require('./enums/TextButtonStyle');
 
 class CardService {
   static newAction () {
-    return new Action()
+    return new Action();
   }
 
   static newActionResponseBuilder () {
-    return new ActionResponseBuilder()
+    return new ActionResponseBuilder();
   }
 
   static newAuthorizationAction () {
-    return new AuthorizationAction()
+    return new AuthorizationAction();
   }
 
   static newButtonSet () {
-    return new ButtonSet()
+    return new ButtonSet();
   }
 
   static newCardAction () {
-    return new CardAction()
+    return new CardAction();
   }
 
   static newCardBuilder () {
-    return new CardBuilder()
+    return new CardBuilder();
   }
 
   static newCardHeader () {
-    return new CardHeader()
+    return new CardHeader();
   }
 
   static newCardSection () {
-    return new CardSection()
+    return new CardSection();
   }
 
   static newImage () {
-    return new Image()
+    return new Image();
   }
 
   static newImageButton () {
-    return new ImageButton()
+    return new ImageButton();
   }
 
   static newKeyValue () {
-    return new KeyValue()
+    return new KeyValue();
   }
 
   static newNavigation () {
-    return new Navigation()
+    return new Navigation();
   }
 
   static newNotification () {
-    return new Notification()
+    return new Notification();
   }
 
   static newOpenLink () {
-    return new OpenLink()
+    return new OpenLink();
   }
 
   static newSelectionInput () {
-    return new SelectionInput()
+    return new SelectionInput();
   }
 
   static newSuggestions () {
-    return new Suggestions()
+    return new Suggestions();
   }
 
   static newTextButton () {
-    return new TextButton()
+    return new TextButton();
   }
 
   static newTextInput () {
-    return new TextInput()
+    return new TextInput();
   }
 
   static newTextParagraph () {
-    return new TextParagraph()
+    return new TextParagraph();
   }
 
   static newUniversalActionResponseBuilder () {
-    return new UniversalActionResponseBuilder()
+    return new UniversalActionResponseBuilder();
   }
 
   static get ComposeEmailType () {
-    return ComposeEmailType
+    return ComposeEmailType;
   }
 
   static get Icon () {
-    return Icon
+    return Icon;
   }
 
   static get ImageStyle () {
-    return ImageStyle
+    return ImageStyle;
   }
 
   static get LoadIndicator () {
-    return LoadIndicator
+    return LoadIndicator;
   }
 
   static get NotificationType () {
-    return NotificationType
+    return NotificationType;
   }
 
   static get OnClose () {
-    return OnClose
+    return OnClose;
   }
 
   static get OpenAs () {
-    return OpenAs
+    return OpenAs;
   }
 
   static get SelectionInputType () {
-    return SelectionInputType
+    return SelectionInputType;
   }
 
   static get TextButtonStyle () {
-    return TextButtonStyle
+    return TextButtonStyle;
   }
 }
 
-module.exports = CardService
+module.exports = CardService;

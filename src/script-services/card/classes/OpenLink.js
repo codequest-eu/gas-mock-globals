@@ -1,17 +1,17 @@
-const BaseClass = require('../../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass');
 
 class OpenLink extends BaseClass {
   setUrl (url) {
-    this._data.url = url
+    this._data.url = url;
 
-    return this
+    return this;
   }
 
   setOpenAs (openAs) {
-    this._data.openAs = openAs
+    this._data.openAs = openAs;
 
-    return this
+    return this;
   }
 }
 
-module.exports = OpenLink
+module.exports = OpenLink;

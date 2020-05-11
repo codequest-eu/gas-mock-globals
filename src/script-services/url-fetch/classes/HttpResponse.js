@@ -1,8 +1,8 @@
-const Blob = require('../../base/classes/Blob')
+const Blob = require('../../base/classes/Blob');
 
 class HttpResponse {
   getAllHeaders () {
-    return this.getHeaders()
+    return this.getHeaders();
   }
 
   getHeaders () {
@@ -11,24 +11,24 @@ class HttpResponse {
       Accept: 'application/json; charset=UTF-8',
       GroupId: 'FGx1AWaAzKOo0imNkLmf',
       AuthServiceId: 'here_app',
-    }
+    };
   }
 
   getAs (contentType) {
-    return new Blob()
+    return new Blob();
   }
 
   getBlob () {
-    return new Blob()
+    return new Blob();
   }
 
   getContentText () {
-    return 'dummy-content-text'
+    return 'dummy-content-text';
   }
 
   getResponseCode () {
-    return 200
+    return 200;
   }
 }
 
-module.exports = HttpResponse
+module.exports = HttpResponse;

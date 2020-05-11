@@ -1,55 +1,55 @@
-const CardHeader = require('./CardHeader')
-const CardSection = require('./CardSection')
-const CardAction = require('./CardAction')
-const BaseClass = require('../../../helpers/BaseClass')
+const CardHeader = require('./CardHeader');
+const CardSection = require('./CardSection');
+const CardAction = require('./CardAction');
+const BaseClass = require('../../../helpers/BaseClass');
 
 class Card extends BaseClass {
   constructor () {
-    super()
-    this._data.sections = []
-    this._data.cardActions = []
+    super();
+    this._data.sections = [];
+    this._data.cardActions = [];
   }
 
   setName (name) {
     // TODO: check the name of the property
-    this._data.name = name
+    this._data.name = name;
 
-    return this
+    return this;
   }
 
   setHeader (header) {
     if ((header instanceof CardHeader) === false) {
-      throw new Error('Invalid value passed for "setHeader"')
+      throw new Error('Invalid value passed for "setHeader"');
     }
 
-    this._data.header = header.getData()
+    this._data.header = header.getData();
 
-    return this
+    return this;
   }
 
   addSection (section) {
     if ((section instanceof CardSection) === false) {
-      throw new Error('Invalid value passed for "addSection"')
+      throw new Error('Invalid value passed for "addSection"');
     }
 
-    this._data.sections.push(section.getData())
+    this._data.sections.push(section.getData());
 
-    return this
+    return this;
   }
 
   addCardAction (cardAction) {
     if ((cardAction instanceof CardAction) === false) {
-      throw new Error('Invalid value passed for "addCardAction"')
+      throw new Error('Invalid value passed for "addCardAction"');
     }
 
-    this._data.cardActions.push(cardAction.getData())
+    this._data.cardActions.push(cardAction.getData());
 
-    return this
+    return this;
   }
 
   printJson () {
-    return this.getData()
+    return this.getData();
   }
 }
 
-module.exports = Card
+module.exports = Card;

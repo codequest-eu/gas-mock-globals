@@ -1,23 +1,23 @@
-const set = require('lodash.set')
-const Button = require('./Button')
-const OpenLink = require('./OpenLink')
+const set = require('lodash.set');
+const Button = require('./Button');
+const OpenLink = require('./OpenLink');
 
 class ImageButton extends Button {
   setIconUrl (url) {
-    this._data.url = url
+    this._data.url = url;
 
-    return this
+    return this;
   }
 
   setOpenLink (openLink) {
     if ((openLink instanceof OpenLink) === false) {
-      throw new Error('Invalid value passed for "setOpenLink"')
+      throw new Error('Invalid value passed for "setOpenLink"');
     }
 
-    set(this._data, 'onClick.openLink', openLink.getData())
+    set(this._data, 'onClick.openLink', openLink.getData());
 
-    return this
+    return this;
   }
 }
 
-module.exports = ImageButton
+module.exports = ImageButton;

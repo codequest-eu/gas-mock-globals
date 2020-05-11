@@ -1,182 +1,182 @@
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../helpers/BaseClass');
 
 class Service extends BaseClass {
   constructor (serviceName) {
-    super()
+    super();
 
-    this._data.serviceName = serviceName
-    this._data.params = {}
-    this._data.scriptId = 'dummy-script-id'
+    this._data.serviceName = serviceName;
+    this._data.params = {};
+    this._data.scriptId = 'dummy-script-id';
   }
 
   setAuthorizationBaseUrl (authorizationBaseUrl) {
-    this._data.authorizationBaseUrl = authorizationBaseUrl
+    this._data.authorizationBaseUrl = authorizationBaseUrl;
 
-    return this
+    return this;
   }
 
   setTokenUrl (tokenUrl) {
-    this._data.tokenUrl = tokenUrl
+    this._data.tokenUrl = tokenUrl;
 
-    return this
+    return this;
   }
 
   setClientId (clientId) {
-    this._data.clientId = clientId
+    this._data.clientId = clientId;
 
-    return this
+    return this;
   }
 
   setClientSecret (clientSecret) {
-    this._data.clientSecret = clientSecret
+    this._data.clientSecret = clientSecret;
 
-    return this
+    return this;
   }
 
   setCallbackFunction (callbackFunctionName) {
-    this._data.callbackFunctionName = callbackFunctionName
+    this._data.callbackFunctionName = callbackFunctionName;
 
-    return this
+    return this;
   }
 
   setPropertyStore (propertyStore) {
-    this._data.propertyStore = propertyStore
+    this._data.propertyStore = propertyStore;
 
-    return this
+    return this;
   }
 
   setScope (scope, optSeparator) {
-    const separator = optSeparator || ' '
+    const separator = optSeparator || ' ';
 
     this._data.params.scope = Array.isArray(scope)
       ? scope.join(separator)
-      : scope
+      : scope;
 
-    return this
+    return this;
   }
 
   setParam (name, value) {
-    this._data.params[name] = value
+    this._data.params[name] = value;
 
-    return this
+    return this;
   }
 
   setCache (cache) {
-    this._data.cache = cache
+    this._data.cache = cache;
 
-    return this
+    return this;
   }
 
   setLock (lock) {
-    this._data.lock = lock
+    this._data.lock = lock;
 
-    return this
+    return this;
   }
 
   setPrivateKey (privateKey) {
-    this._data.privateKey = privateKey
+    this._data.privateKey = privateKey;
 
-    return this
+    return this;
   }
 
   setIssuer (issuer) {
-    this._data.issuer = issuer
+    this._data.issuer = issuer;
 
-    return this
+    return this;
   }
 
   setSubject (subject) {
-    this._data.subject = subject
+    this._data.subject = subject;
 
-    return this
+    return this;
   }
 
   setExpirationMinutes (expirationMinutes) {
-    this._data.expirationMinutes = expirationMinutes
+    this._data.expirationMinutes = expirationMinutes;
 
-    return this
+    return this;
   }
 
   setGrantType (grantType) {
-    this._data.grantType = grantType
+    this._data.grantType = grantType;
 
-    return this
+    return this;
   }
 
   getAuthorizationUrl () {
-    return `${this._data.authorizationBaseUrl}/dummy-route`
+    return `${this._data.authorizationBaseUrl}/dummy-route`;
   }
 
   handleCallback () {
-    return true
+    return true;
   }
 
   hasAccess () {
-    return true
+    return true;
   }
 
   getAccessToken () {
-    return 'dummy-token'
+    return 'dummy-token';
   }
 
   reset () {
   }
 
   getLastError () {
-    return new Error('dummy-error')
+    return new Error('dummy-error');
   }
 
   getRedirectUri () {
-    return `https://dummy-redirect-url.com/${this._data.scriptId}`
+    return `https://dummy-redirect-url.com/${this._data.scriptId}`;
   }
 
   fetchToken (payload, optUrl) {
-    return { token: 'dummy-token' }
+    return { token: 'dummy-token' };
   }
 
   getTokenFromResponse (response) {
-    return 'dummy-response-token'
+    return 'dummy-response-token';
   }
 
   parseToken (content) {
-    return 'dummy-parse-token'
+    return 'dummy-parse-token';
   }
 
   refresh () {
   }
 
   getStorage () {
-    return 'dummy-storage'
+    return 'dummy-storage';
   }
 
   saveToken () {
   }
 
   getToken () {
-    return 'dummy-token'
+    return 'dummy-token';
   }
 
   isExpired () {
-    return false
+    return false;
   }
 
   canRefresh () {
-    return false
+    return false;
   }
 
   exchangeJwt () {
   }
 
   createJwt () {
-    return 'dummy-jwt'
+    return 'dummy-jwt';
   }
 
   lockable () {
-    return 'dummy-lockable'
+    return 'dummy-lockable';
   }
 
   exchangeGrant () {
   }
 }
 
-module.exports = Service
+module.exports = Service;

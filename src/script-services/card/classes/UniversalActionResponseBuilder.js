@@ -1,26 +1,26 @@
-const BaseClass = require('../../../helpers/BaseClass')
-const OpenLink = require('./OpenLink')
+const BaseClass = require('../../../helpers/BaseClass');
+const OpenLink = require('./OpenLink');
 
 class UniversalActionResponseBuilder extends BaseClass {
   build () {
-    return this.getData()
+    return this.getData();
   }
 
   displayAddOnCards (cards = []) {
-    this._data.cards = cards
+    this._data.cards = cards;
 
-    return this
+    return this;
   }
 
   setOpenLink (openLink) {
     if ((openLink instanceof OpenLink) === false) {
-      throw new Error('Invalid value passed for "setOpenLink"')
+      throw new Error('Invalid value passed for "setOpenLink"');
     }
 
-    this._data.openLink = openLink
+    this._data.openLink = openLink;
 
-    return this
+    return this;
   }
 }
 
-module.exports = UniversalActionResponseBuilder
+module.exports = UniversalActionResponseBuilder;

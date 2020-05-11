@@ -1,28 +1,28 @@
-const BaseClass = require('../../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass');
 
 class Suggestions extends BaseClass {
   constructor () {
-    super()
+    super();
     this._data = {
       autoComplete: {
         items: [],
       },
-    }
+    };
   }
 
   addSuggestion (suggestion = '') {
     this._data.autoComplete.items.push({
       text: suggestion,
-    })
+    });
 
-    return this
+    return this;
   }
 
   addSuggestions (suggestions = []) {
-    suggestions.forEach(s => this.addSuggestion(s))
+    suggestions.forEach(s => this.addSuggestion(s));
 
-    return this
+    return this;
   }
 }
 
-module.exports = Suggestions
+module.exports = Suggestions;

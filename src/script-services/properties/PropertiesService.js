@@ -1,17 +1,17 @@
-const Properties = require('./classes/Properties')
+const Properties = require('./classes/Properties');
 
 class PropertiesService {
   static getDocumentProperties () {
-    return new Properties()
+    return new Properties();
   }
 
   static getScriptProperties () {
-    return new Properties()
+    return new Properties();
   }
 
   static getUserProperties () {
-    return new Properties()
+    return new Properties();
   }
 }
 
-module.exports = PropertiesService
+module.exports = PropertiesService;

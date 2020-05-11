@@ -1,11 +1,11 @@
-const Widget = require('./Widget')
+const Widget = require('./Widget');
 
 class TextParagraph extends Widget {
   setText (text) {
-    this._data.text = text
+    this._data.text = text;
 
-    return this
+    return this;
   }
 }
 
-module.exports = TextParagraph
+module.exports = TextParagraph;
