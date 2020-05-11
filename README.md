@@ -1,8 +1,8 @@
 # Gas Mock Globals
 
-[![Build Status](https://travis-ci.com/dan-kushnaryov/gas-mock-globals.svg?branch=master)](https://travis-ci.com/dan-kushnaryov/gas-mock-globals)
-[![codecov](https://codecov.io/gh/dan-kushnaryov/gas-mock-globals/branch/master/graph/badge.svg)](https://codecov.io/gh/dan-kushnaryov/gas-mock-globals)
-[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+This is mock of [dan-kushnaryov/gas-mock-globals](https://github.com/dan-kushnaryov/gas-mock-globals) currently for internal usage.
+
+## Original README
 
 This is a collection of [Google Apps Script services](https://developers.google.com/apps-script/reference/) polyfills which can be used to mock Apps Script globals in your tests.
 
