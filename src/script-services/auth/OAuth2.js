@@ -1,4 +1,4 @@
-const BaseClass = require('../../src/helpers/BaseClass')
+const BaseClass = require('../../helpers/BaseClass')
 const Service = require('./Service')
 
 class OAuth2 extends BaseClass {

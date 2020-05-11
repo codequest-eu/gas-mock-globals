@@ -1,6 +1,6 @@
 const set = require('lodash.set')
 const OpenLink = require('./OpenLink')
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 
 class CardAction extends BaseClass {
   setOpenLink (openLink) {

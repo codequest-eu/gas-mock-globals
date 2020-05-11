@@ -1,7 +1,7 @@
 const CardHeader = require('./CardHeader')
 const CardSection = require('./CardSection')
 const CardAction = require('./CardAction')
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 
 class Card extends BaseClass {
   constructor () {

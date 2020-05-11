@@ -1,4 +1,4 @@
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 const Widget = require('./Widget')
 const Button = require('./Button')
 const ButtonSet = require('./ButtonSet')

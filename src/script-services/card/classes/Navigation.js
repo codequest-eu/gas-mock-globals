@@ -1,4 +1,4 @@
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 const Card = require('./Card')
 
 class Navigation extends BaseClass {

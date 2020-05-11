@@ -1,4 +1,4 @@
-const BaseClass = require('../../src/helpers/BaseClass')
+const BaseClass = require('../../helpers/BaseClass')
 
 class Service extends BaseClass {
   constructor (serviceName) {

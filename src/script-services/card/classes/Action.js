@@ -1,4 +1,4 @@
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 
 class Action extends BaseClass {
   setFunctionName (functionName) {

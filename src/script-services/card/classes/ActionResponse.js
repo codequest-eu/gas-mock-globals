@@ -1,9 +1,8 @@
-const BaseClass = require('../../helpers/BaseClass')
+const BaseClass = require('../../../helpers/BaseClass')
 const Navigation = require('./Navigation')
 const Notification = require('./Notification')
 
 class ActionResponse extends BaseClass {
-
   setNavigation (navigation) {
     if ((navigation instanceof Navigation) === false) {
       throw new Error('Invalid value passed for "setNavigation"')
@@ -17,7 +16,6 @@ class ActionResponse extends BaseClass {
     }
     this._data.notification = notification.getData()
   }
-
 }
 
 module.exports = ActionResponse
