@@ -1,6 +1,6 @@
-const CardSection = require('../../../src/card/classes/CardSection');
-const Widget = require('../../../src/card/classes/Widget');
-const Button = require('../../../src/card/classes/Button');
+const CardSection = require('../../../src/script-services/card/classes/CardSection');
+const Widget = require('../../../src/script-services/card/classes/Widget');
+const Button = require('../../../src/script-services/card/classes/Button');
 
 describe('CardSection', () => {
   it('Should add widget', () => {

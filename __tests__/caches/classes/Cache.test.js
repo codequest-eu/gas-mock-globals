@@ -1,4 +1,4 @@
-const Cache = require('../../../src/cache/classes/Cache');
+const Cache = require('../../../src/script-services/cache/classes/Cache');
 
 describe('Cache', () => {
   let cache;

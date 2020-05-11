@@ -1,7 +1,7 @@
-const KeyValue = require('../../../src/card/classes/KeyValue');
-const Button = require('../../../src/card/classes/Button');
-const Action = require('../../../src/card/classes/Action');
-const OpenLink = require('../../../src/card/classes/OpenLink');
+const KeyValue = require('../../../src/script-services/card/classes/KeyValue');
+const Button = require('../../../src/script-services/card/classes/Button');
+const Action = require('../../../src/script-services/card/classes/Action');
+const OpenLink = require('../../../src/script-services/card/classes/OpenLink');
 
 describe('KeyValue', () => {
   it('Should set button label', () => {

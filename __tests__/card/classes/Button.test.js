@@ -1,6 +1,6 @@
-const Button = require('../../../src/card/classes/Button');
-const Action = require('../../../src/card/classes/Action');
-const OpenLink = require('../../../src/card/classes/OpenLink');
+const Button = require('../../../src/script-services/card/classes/Button');
+const Action = require('../../../src/script-services/card/classes/Action');
+const OpenLink = require('../../../src/script-services/card/classes/OpenLink');
 
 describe('Button', () => {
   it('Should set onClick action', () => {

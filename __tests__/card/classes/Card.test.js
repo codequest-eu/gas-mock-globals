@@ -1,7 +1,7 @@
-const Card = require('../../../src/card/classes/Card');
-const CardHeader = require('../../../src/card/classes/CardHeader');
-const CardSection = require('../../../src/card/classes/CardSection');
-const CardAction = require('../../../src/card/classes/CardAction');
+const Card = require('../../../src/script-services/card/classes/Card');
+const CardHeader = require('../../../src/script-services/card/classes/CardHeader');
+const CardSection = require('../../../src/script-services/card/classes/CardSection');
+const CardAction = require('../../../src/script-services/card/classes/CardAction');
 
 describe('Card', () => {
   it('Should set the name', () => {

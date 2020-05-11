@@ -1,4 +1,4 @@
-const Action = require('../../../src/card/classes/Action');
+const Action = require('../../../src/script-services/card/classes/Action');
 
 describe('Action', () => {
   it('Should set the function name', () => {

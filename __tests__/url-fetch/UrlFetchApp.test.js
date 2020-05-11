@@ -1,5 +1,5 @@
-const UrlFetchApp = require('../../src/url-fetch/UrlFetchApp');
-const HttpResponse = require('../../src/url-fetch/classes/HttpResponse');
+const UrlFetchApp = require('../../src/script-services/url-fetch/UrlFetchApp');
+const HttpResponse = require('../../src/script-services/url-fetch/classes/HttpResponse');
 
 describe('UrlFetchApp', () => {
   it('Should fetch the request', () => {

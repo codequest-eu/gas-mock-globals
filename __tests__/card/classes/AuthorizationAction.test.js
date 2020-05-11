@@ -1,4 +1,4 @@
-const AuthorizationAction = require('../../../src/card/classes/AuthorizationAction');
+const AuthorizationAction = require('../../../src/script-services/card/classes/AuthorizationAction');
 
 describe('AuthorizationAction', () => {
   it('Should set the function name', () => {

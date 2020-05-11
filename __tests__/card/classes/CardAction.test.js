@@ -1,5 +1,5 @@
-const CardAction = require('../../../src/card/classes/CardAction');
-const OpenLink = require('../../../src/card/classes/OpenLink');
+const CardAction = require('../../../src/script-services/card/classes/CardAction');
+const OpenLink = require('../../../src/script-services/card/classes/OpenLink');
 
 describe('CardAction', () => {
   it('Should set the text', () => {

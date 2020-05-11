@@ -1,5 +1,5 @@
-const ButtonSet = require('../../../src/card/classes/ButtonSet');
-const Button = require('../../../src/card/classes/Button');
+const ButtonSet = require('../../../src/script-services/card/classes/ButtonSet');
+const Button = require('../../../src/script-services/card/classes/Button');
 
 describe('ButtonSet', () => {
   it('Should add the button', () => {

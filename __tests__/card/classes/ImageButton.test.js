@@ -1,5 +1,5 @@
-const ImageButton = require('../../../src/card/classes/ImageButton');
-const OpenLink = require('../../../src/card/classes/OpenLink');
+const ImageButton = require('../../../src/script-services/card/classes/ImageButton');
+const OpenLink = require('../../../src/script-services/card/classes/OpenLink');
 
 describe('ImageButton', () => {
   it('Should set icon url', () => {

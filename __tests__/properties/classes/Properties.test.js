@@ -1,4 +1,4 @@
-const Properties = require('../../../src/properties/classes/Properties');
+const Properties = require('../../../src/script-services/properties/classes/Properties');
 
 describe('Properties', () => {
   let properties;

@@ -1,4 +1,4 @@
-const Image = require('../../../src/card/classes/Image');
+const Image = require('../../../src/script-services/card/classes/Image');
 
 describe('Image', () => {
   it('Should set image url', () => {
