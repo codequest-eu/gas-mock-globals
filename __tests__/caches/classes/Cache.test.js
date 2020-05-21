@@ -14,7 +14,7 @@ describe('Cache', () => {
   });
 
   it('Should get all of the properties in cache', () => {
-    expect(cache.getAll()).toEqual({
+    expect(cache.getAll()).toMatchObject({
       key1: 'value1',
       key2: 'value2',
       key3: 'value3',
@@ -29,8 +29,8 @@ describe('Cache', () => {
   });
 
   it('Should get the list of properties from the cache', () => {
-    expect(cache.getAll(['key1'])).toEqual({ key1: 'value1' });
-    expect(cache.getAll(['key1', 'key2', 'key3'])).toEqual({
+    expect(cache.getAll(['key1'])).toMatchObject({ key1: 'value1' });
+    expect(cache.getAll(['key1', 'key2', 'key3'])).toMatchObject({
       key1: 'value1',
       key2: 'value2',
       key3: 'value3',
@@ -46,7 +46,7 @@ describe('Cache', () => {
   it('It should put the list of properties into the cache', () => {
     cache.putAll({ key4: 'value4', key5: 'value5' });
 
-    expect(cache.getAll(['key1', 'key4', 'key5'])).toEqual({
+    expect(cache.getAll(['key1', 'key4', 'key5'])).toMatchObject({
       key1: 'value1',
       key4: 'value4',
       key5: 'value5',
@@ -56,7 +56,7 @@ describe('Cache', () => {
   it('Should remove the property from the cache', () => {
     cache.remove('key1');
 
-    expect(cache.getAll(['key1', 'key2', 'key3'])).toEqual({
+    expect(cache.getAll(['key1', 'key2', 'key3'])).toMatchObject({
       key2: 'value2',
       key3: 'value3',
     });
@@ -65,6 +65,6 @@ describe('Cache', () => {
   it('Should remove the list of properties from the cache', () => {
     cache.removeAll(['key1', 'key3']);
 
-    expect(cache.getAll(['key1', 'key2', 'key3'])).toEqual({ key2: 'value2' });
+    expect(cache.getAll(['key1', 'key2', 'key3'])).toMatchObject({ key2: 'value2' });
   });
 });

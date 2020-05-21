@@ -5,17 +5,21 @@ Object {
   "cardActions": Array [],
   "header": Object {
     "title": "Card title",
+    "type": "CardHeader",
   },
   "name": "Card name",
   "sections": Array [
     Object {
       "header": "Section header",
+      "type": "CardSection",
       "widgets": Array [
         Object {
           "text": "Text paragraph",
+          "type": "TextParagraph",
         },
       ],
     },
   ],
+  "type": "Card",
 }
 `;

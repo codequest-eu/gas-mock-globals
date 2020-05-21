@@ -5,13 +5,13 @@ describe('ImageButton', () => {
   it('Should set icon url', () => {
     const imageButton = new ImageButton().setIconUrl('url');
 
-    expect(imageButton.getData()).toEqual({ url: 'url' });
+    expect(imageButton.getData()).toMatchObject({ url: 'url' });
   });
 
   it('Should set open link', () => {
     const imageButton = new ImageButton().setOpenLink(new OpenLink());
 
-    expect(imageButton.getData()).toEqual({
+    expect(imageButton.getData()).toMatchObject({
       onClick: {
         openLink: {},
       }

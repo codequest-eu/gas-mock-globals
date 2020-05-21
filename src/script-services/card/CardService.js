@@ -32,7 +32,8 @@ const SelectionInputType = require('./enums/SelectionInputType');
 const TextButtonStyle = require('./enums/TextButtonStyle');
 
 class CardService {
-  static newAction () {
+  static newAction
+   () {
     return new Action();
   }
 

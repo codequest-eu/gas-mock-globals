@@ -5,7 +5,7 @@ describe('CardAction', () => {
   it('Should set the text', () => {
     const cardAction = new CardAction().setText('text');
 
-    expect(cardAction.getData()).toEqual({
+    expect(cardAction.getData()).toMatchObject({
       actionLabel: 'text',
     });
   });
@@ -13,7 +13,7 @@ describe('CardAction', () => {
   it('Should set open link', () => {
     const cardAction = new CardAction().setOpenLink(new OpenLink());
 
-    expect(cardAction.getData()).toEqual({
+    expect(cardAction.getData()).toMatchObject({
       onClick: {
         openLink: {},
       },

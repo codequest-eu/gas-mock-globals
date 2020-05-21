@@ -7,7 +7,7 @@ describe('Card', () => {
   it('Should set the name', () => {
     const card = new Card().setName('card-name');
 
-    expect(card.printJson()).toEqual({
+    expect(card.printJson()).toMatchObject({
       cardActions: [],
       sections: [],
       name: 'card-name',
@@ -17,7 +17,7 @@ describe('Card', () => {
   it('Should set the header', () => {
     const card = new Card().setHeader(new CardHeader());
 
-    expect(card.printJson()).toEqual({
+    expect(card.printJson()).toMatchObject({
       cardActions: [],
       sections: [],
       header: {},
@@ -34,7 +34,7 @@ describe('Card', () => {
       .addSection(new CardSection())
       .addSection(new CardSection());
 
-    expect(card.printJson()).toEqual({
+    expect(card.printJson()).toMatchObject({
       cardActions: [],
       sections: [
         { widgets: [] },
@@ -53,7 +53,7 @@ describe('Card', () => {
       .addCardAction(new CardAction())
       .addCardAction(new CardAction());
 
-    expect(card.printJson()).toEqual({
+    expect(card.printJson()).toMatchObject({
       cardActions: [{}, {}],
       sections: [],
     });

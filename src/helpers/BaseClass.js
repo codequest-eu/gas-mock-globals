@@ -1,9 +1,11 @@
 class BaseClass {
-  constructor () {
-    this._data = {};
+  constructor() {
+    this._data = {
+      type: this.constructor.name
+    };
   }
 
-  getData () {
+  getData() {
     return this._data;
   }
 }

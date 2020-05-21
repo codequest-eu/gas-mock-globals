@@ -7,7 +7,7 @@ describe('KeyValue', () => {
   it('Should set button label', () => {
     const keyValue = new KeyValue().setBottomLabel('label');
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         bottomLabel: 'label',
       },
@@ -17,7 +17,7 @@ describe('KeyValue', () => {
   it('Should set button', () => {
     const keyValue = new KeyValue().setButton(new Button());
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         textButton: {},
       },
@@ -32,7 +32,7 @@ describe('KeyValue', () => {
   it('Should set content', () => {
     const keyValue = new KeyValue().setContent('content');
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         content: 'content',
       },
@@ -42,7 +42,7 @@ describe('KeyValue', () => {
   it('Should set icon url', () => {
     const keyValue = new KeyValue().setIconUrl('url');
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         iconUrl: 'url',
       },
@@ -52,7 +52,7 @@ describe('KeyValue', () => {
   it('Should set multiline', () => {
     const keyValue = new KeyValue().setMultiline(true);
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         multiline: true,
       },
@@ -62,7 +62,7 @@ describe('KeyValue', () => {
   it('Should set onClickAction', () => {
     const keyValue = new KeyValue().setOnClickAction(new Action());
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         onClick: {
           action: {},
@@ -79,7 +79,7 @@ describe('KeyValue', () => {
   it('Should set openLink', () => {
     const keyValue = new KeyValue().setOpenLink(new OpenLink());
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         openLink: {},
       },
@@ -94,7 +94,7 @@ describe('KeyValue', () => {
   it('Should set top label', () => {
     const keyValue = new KeyValue().setTopLabel('label');
 
-    expect(keyValue.getData()).toEqual({
+    expect(keyValue.getData()).toMatchObject({
       keyValue: {
         topLabel: 'label',
       },

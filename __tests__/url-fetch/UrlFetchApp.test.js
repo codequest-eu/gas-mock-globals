@@ -16,6 +16,6 @@ describe('UrlFetchApp', () => {
   });
 
   it('Should get the request', () => {
-    expect(UrlFetchApp.getRequest('request1')).toEqual({});
+    expect(UrlFetchApp.getRequest('request1')).toMatchObject({});
   });
 });

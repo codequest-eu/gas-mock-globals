@@ -21,7 +21,7 @@ describe('Properties', () => {
   });
 
   it('Should get all properties', () => {
-    expect(properties.getProperties()).toEqual({
+    expect(properties.getProperties()).toMatchObject({
       key1: 'value1',
       key2: 'value2',
       key3: 'value3',
@@ -45,7 +45,7 @@ describe('Properties', () => {
       .setProperties({ key3: 'value4', key4: 'value5' })
       .getProperties();
 
-    expect(props).toEqual({
+    expect(props).toMatchObject({
       key1: 'value1',
       key2: 'value2',
       key3: 'value4',
@@ -58,7 +58,7 @@ describe('Properties', () => {
       .setProperties({ key3: 'value4', key4: 'value5' }, true)
       .getProperties();
 
-    expect(props).toEqual({ key3: 'value4', key4: 'value5' });
+    expect(props).toMatchObject({ key3: 'value4', key4: 'value5' });
   });
 
   it('Should return all keys of properties', () => {
@@ -70,13 +70,13 @@ describe('Properties', () => {
       .deleteProperty('key1')
       .getProperties();
 
-    expect(props).toEqual({
+    expect(props).toMatchObject({
       key2: 'value2',
       key3: 'value3',
     });
   });
 
   it('Should remove all properties', () => {
-    expect(properties.deleteAllProperties().getProperties()).toEqual({});
+    expect(properties.deleteAllProperties().getProperties()).toMatchObject({});
   });
 });

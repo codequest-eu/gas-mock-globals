@@ -1,44 +1,36 @@
 const BaseClass = require('../../../helpers/BaseClass');
 const Widget = require('./Widget');
-const Button = require('./Button');
-const ButtonSet = require('./ButtonSet');
 
 class CardSection extends BaseClass {
-  constructor () {
+  constructor() {
     super();
     this._data.widgets = [];
   }
 
-  addWidget (widget) {
-    if ((widget instanceof Widget) === false) {
+  addWidget(widget) {
+    if (widget instanceof Widget === false) {
       throw new Error('Invalid value passed for "addWidget"');
     }
 
-    if (widget instanceof Button) {
-      const buttonSet = new ButtonSet().addButton(widget);
-
-      this._data.widgets.push(buttonSet.getData());
-    } else {
-      this._data.widgets.push(widget.getData());
-    }
+    this._data.widgets.push(widget.getData());
 
     return this;
   }
 
-  setCollapsible (collapsible) {
+  setCollapsible(collapsible) {
     this._data.collapsible = collapsible;
 
     return this;
   }
 
-  setHeader (header) {
+  setHeader(header) {
     this._data.header = header;
 
     return this;
   }
 
-  setNumUncollapsibleWidgets (uncollapsiblewidgetsNum) {
-    this._data.uncollapsiblewidgetsNum = uncollapsiblewidgetsNum;
+  setNumUncollapsibleWidgets(numUncollapsibleWidgets) {
+    this._data.numUncollapsibleWidgets = numUncollapsibleWidgets;
 
     return this;
   }

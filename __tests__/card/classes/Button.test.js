@@ -8,7 +8,7 @@ describe('Button', () => {
       .setOnClickAction(new Action())
       .getData();
 
-    expect(data).toEqual({ onClick: { action: {} } });
+    expect(data).toMatchObject({ onClick: { action: {} } });
   });
 
   it('Should throw an exception on set onClickAction', () => {
@@ -21,7 +21,7 @@ describe('Button', () => {
       .setOpenLink(new OpenLink())
       .getData();
 
-    expect(data).toEqual({ onClick: { openLink: {} } });
+    expect(data).toMatchObject({ onClick: { openLink: {} } });
   });
 
   it('Should throw an exception on set openLink', () => {

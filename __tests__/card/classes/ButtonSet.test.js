@@ -8,6 +8,6 @@ describe('ButtonSet', () => {
       .addButton(new Button())
       .getData();
 
-    expect(data).toEqual({ buttons: [{}, {}] });
+    expect(data).toMatchObject({ buttons: [{}, {}] });
   });
 });
