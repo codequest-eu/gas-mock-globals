@@ -1,11 +1,9 @@
 const ActionResponse = require('./ActionResponse');
+const BaseClass = require('../../../helpers/BaseClass');
 
-class ActionResponseBuilder {
+class ActionResponseBuilder extends BaseClass {
   build () {
-    return new ActionResponse({
-      navigation: this.navigation,
-      notification: this.notification
-    });
+    return new ActionResponse(this._data);
   }
 }
 

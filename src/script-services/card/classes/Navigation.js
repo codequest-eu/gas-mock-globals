@@ -7,17 +7,17 @@ class Navigation extends BaseClass {
   }
 
   pushCard(card) {
-    this._data.cards.push({ pushCard: card.getData() });
+    this._data.cards.push({ nav: 'push', card: card.getData() });
     return this;
   }
 
   updateCard(card) {
-    this._data.cards.push({ updateCard: card.getData() });
+    this._data.cards.push({ nav: 'update', card: card.getData() });
     return this;
   }
 
   popCard() {
-    this._data.cards.push({ popCard: null });
+    this._data.cards.push({ nav: 'pop', card: null });
     return this;
   }
 }
