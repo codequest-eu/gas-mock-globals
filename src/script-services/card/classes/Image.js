@@ -1,11 +1,5 @@
 const Widget = require('./Widget');
 
-class Image extends Widget {
-  setImageUrl (url) {
-    this._data.url = url;
-
-    return this;
-  }
-}
+class Image extends Widget {}
 
 module.exports = Image;

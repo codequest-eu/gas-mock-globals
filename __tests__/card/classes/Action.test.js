@@ -6,7 +6,7 @@ describe('Action', () => {
       .setFunctionName('test-fn-name')
       .getData();
 
-    expect(data).toMatchObject({ actionMethodName: 'test-fn-name' });
+    expect(data).toMatchObject({ functionName: 'test-fn-name' });
   });
 
   it('Should set the parameters', () => {

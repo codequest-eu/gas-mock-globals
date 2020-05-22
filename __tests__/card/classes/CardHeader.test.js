@@ -18,6 +18,6 @@ describe('CardHeader', () => {
 
   it('Should set subtitle', () => {
     expect((new CardHeader()).setSubtitle('test-subtitle').getData())
-      .toMatchObject({ subTitle: 'test-subtitle' });
+      .toMatchObject({ subtitle: 'test-subtitle' });
   });
 });

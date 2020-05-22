@@ -1,23 +1,12 @@
 const BaseClass = require('../../../helpers/BaseClass');
-const OpenLink = require('./OpenLink');
 
 class UniversalActionResponseBuilder extends BaseClass {
-  build () {
+  build() {
     return this.getData();
   }
 
-  displayAddOnCards (cards = []) {
-    this._data.cards = cards;
-
-    return this;
-  }
-
-  setOpenLink (openLink) {
-    if ((openLink instanceof OpenLink) === false) {
-      throw new Error('Invalid value passed for "setOpenLink"');
-    }
-
-    this._data.openLink = openLink;
+  displayAddOnCards(cards = []) {
+    this.setCards(cards);
 
     return this;
   }

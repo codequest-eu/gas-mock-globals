@@ -24,10 +24,6 @@ describe('Card', () => {
     });
   });
 
-  it('Should throw an exception on set the header', () => {
-    expect(new Card().setHeader)
-      .toThrowError('Invalid value passed for "setHeader"');
-  });
 
   it('Should set the section', () => {
     const card = new Card()
@@ -41,11 +37,6 @@ describe('Card', () => {
         { widgets: [] },
       ]
     });
-  });
-
-  it('Should throw an exception on set the section', () => {
-    expect(new Card().addSection)
-      .toThrowError('Invalid value passed for "addSection"');
   });
 
   it('Should set the card action', () => {

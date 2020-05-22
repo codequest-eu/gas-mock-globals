@@ -7,7 +7,6 @@ describe('ButtonSet', () => {
       .addButton(new Button())
       .addButton(new Button())
       .getData();
-
     expect(data).toMatchObject({ buttons: [{}, {}] });
   });
 });

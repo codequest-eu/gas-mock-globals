@@ -6,6 +6,6 @@ describe('AuthorizationAction', () => {
       .setAuthorizationUrl('test-auth-url')
       .getData();
 
-    expect(data).toMatchObject({ url: 'test-auth-url' });
+    expect(data).toMatchObject({ authorizationUrl: 'test-auth-url' });
   });
 });

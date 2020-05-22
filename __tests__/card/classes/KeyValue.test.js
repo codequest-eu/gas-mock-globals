@@ -8,9 +8,7 @@ describe('KeyValue', () => {
     const keyValue = new KeyValue().setBottomLabel('label');
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        bottomLabel: 'label',
-      },
+      bottomLabel: 'label',
     });
   });
 
@@ -18,24 +16,15 @@ describe('KeyValue', () => {
     const keyValue = new KeyValue().setButton(new Button());
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        textButton: {},
-      },
+      button: {},
     });
-  });
-
-  it('Should throw an exception on set button', () => {
-    expect(new KeyValue().setButton)
-      .toThrowError('Invalid value passed for "setButton"');
   });
 
   it('Should set content', () => {
     const keyValue = new KeyValue().setContent('content');
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        content: 'content',
-      },
+      content: 'content',
     });
   });
 
@@ -43,9 +32,7 @@ describe('KeyValue', () => {
     const keyValue = new KeyValue().setIconUrl('url');
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        iconUrl: 'url',
-      },
+      iconUrl: 'url',
     });
   });
 
@@ -53,9 +40,7 @@ describe('KeyValue', () => {
     const keyValue = new KeyValue().setMultiline(true);
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        multiline: true,
-      },
+      multiline: true,
     });
   });
 
@@ -63,41 +48,23 @@ describe('KeyValue', () => {
     const keyValue = new KeyValue().setOnClickAction(new Action());
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        onClick: {
-          action: {},
-        },
-      },
+      onClickAction: {},
     });
-  });
-
-  it('Should throw an exception on set onClickAction', () => {
-    expect(new KeyValue().setOnClickAction)
-      .toThrowError('Invalid value passed for "setOnClickAction"');
   });
 
   it('Should set openLink', () => {
     const keyValue = new KeyValue().setOpenLink(new OpenLink());
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        openLink: {},
-      },
+      openLink: {},
     });
-  });
-
-  it('Should throw an exception on set openLink', () => {
-    expect(new KeyValue().setOpenLink)
-      .toThrowError('Invalid value passed for "setOpenLink"');
   });
 
   it('Should set top label', () => {
     const keyValue = new KeyValue().setTopLabel('label');
 
     expect(keyValue.getData()).toMatchObject({
-      keyValue: {
-        topLabel: 'label',
-      },
+      topLabel: 'label',
     });
   });
 });

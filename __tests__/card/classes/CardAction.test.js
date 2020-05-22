@@ -6,7 +6,7 @@ describe('CardAction', () => {
     const cardAction = new CardAction().setText('text');
 
     expect(cardAction.getData()).toMatchObject({
-      actionLabel: 'text',
+      text: 'text',
     });
   });
 
@@ -14,14 +14,7 @@ describe('CardAction', () => {
     const cardAction = new CardAction().setOpenLink(new OpenLink());
 
     expect(cardAction.getData()).toMatchObject({
-      onClick: {
-        openLink: {},
-      },
+      openLink: {},
     });
-  });
-
-  it('Should throw an exception on set openLink', () => {
-    expect(new CardAction().setOpenLink)
-      .toThrowError('Invalid value passed for "setOpenLink"');
   });
 });

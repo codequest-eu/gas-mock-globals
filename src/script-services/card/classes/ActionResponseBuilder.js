@@ -1,22 +1,11 @@
 const ActionResponse = require('./ActionResponse');
 
 class ActionResponseBuilder {
-  constructor () {
-    this._actionResponse = new ActionResponse();
-  }
-
-  setNavigation (navigation) {
-    this._actionResponse.setNavigation(navigation);
-    return this;
-  }
-
-  setNotification (notification) {
-    this._actionResponse.setNotification(notification);
-    return this;
-  }
-
   build () {
-    return this._actionResponse;
+    return new ActionResponse({
+      navigation: this.navigation,
+      notification: this.notification
+    });
   }
 }
 

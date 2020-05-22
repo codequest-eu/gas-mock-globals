@@ -5,21 +5,14 @@ describe('ImageButton', () => {
   it('Should set icon url', () => {
     const imageButton = new ImageButton().setIconUrl('url');
 
-    expect(imageButton.getData()).toMatchObject({ url: 'url' });
+    expect(imageButton.getData()).toMatchObject({ iconUrl: 'url' });
   });
 
   it('Should set open link', () => {
     const imageButton = new ImageButton().setOpenLink(new OpenLink());
 
     expect(imageButton.getData()).toMatchObject({
-      onClick: {
-        openLink: {},
-      }
+      openLink: {},
     });
-  });
-
-  it('Should throw an exception on set open link', () => {
-    expect(new ImageButton().setOpenLink)
-      .toThrowError('Invalid value passed for "setOpenLink"');
   });
 });
