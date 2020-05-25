@@ -4,7 +4,5 @@ declare namespace GasMockGlobals {
   }
 }
 
-// declare const GasFactory: GasMockGlobals.GasFactory;
-
 export = GasMockGlobals;
 export as namespace GasMockGlobals;
