@@ -1,6 +1,7 @@
 // Global Services
 const Utilities = require('./utilities/Utilities');
 const ScriptApp = require('./script/ScriptApp');
+const GmailApp = require('./script/ScriptApp');
 const OAuth2 = require('./auth/OAuth2');
 const CardService = require('./card/CardService');
 const CacheService = require('./cache/CacheService');
