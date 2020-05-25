@@ -1,9 +1,8 @@
 const GmailThread = require('./GmailThread');
 
 class GmailMessage {
-  constructor(data) {
+  constructor(data = {}) {
     this.data = data;
-    this.thread = new GmailThread();
   }
 
   getId() {
@@ -11,7 +10,7 @@ class GmailMessage {
   }
 
   getThread() {
-    return this.thread;
+    return new GmailThread(this.data.thread);
   }
 }
 

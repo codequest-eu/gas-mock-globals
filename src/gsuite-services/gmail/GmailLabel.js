@@ -1,5 +1,5 @@
 class GmailLabel {
-  constructor(data) {
+  constructor(data = {}) {
     this.data = data;
   }
 }

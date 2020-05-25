@@ -24,7 +24,8 @@ class BaseClass {
           if (key.startsWith('add')) {
             const newKey = `${key[3].toLowerCase()}${key.slice(4)}s`;
 
-            return (value) => {
+            return (...values) => {
+              const value = values.length === 1 ? values[0] : values;
               const data = value instanceof BaseClass ? value.getData() : value;
 
               instance._data[newKey] = instance._data[newKey] || [];

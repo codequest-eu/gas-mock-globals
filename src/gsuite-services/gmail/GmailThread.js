@@ -1,7 +1,8 @@
+const GmailLabel = require('./GmailLabel');
+
 class GmailThread {
-  constructor(data) {
+  constructor(data = {}) {
     this.data = data;
-    this.labels = [];
   }
 
   getId() {
@@ -9,7 +10,9 @@ class GmailThread {
   }
 
   getLabels() {
-    return this.labels;
+    return this.data.labels
+      ? this.data.labels.map((label) => new GmailLabel(label))
+      : [];
   }
 }
 
