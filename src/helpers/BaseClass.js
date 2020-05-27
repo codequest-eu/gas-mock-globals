@@ -1,7 +1,8 @@
 class BaseClass {
-  constructor() {
+  constructor(data = {}) {
     this._data = {
       type: this.constructor.name,
+      ...data,
     };
 
     const proxy = new Proxy(this, {

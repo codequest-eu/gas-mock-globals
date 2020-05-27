@@ -1,8 +1,9 @@
 const BaseClass = require('../../../helpers/BaseClass');
+const UpdateDraftActionResponse = require('./UpdateDraftActionResponse');
 
 class UpdateDraftActionResponseBuilder extends BaseClass {
   build() {
-    return this.getData();
+    return new UpdateDraftActionResponse(this._data);
   }
 }
 
