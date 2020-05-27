@@ -1,0 +1,5 @@
+module.exports = {
+  TEXT: 'TEXT',
+  MUTABLE_HTML: 'MUTABLE_HTML',
+  IMMUTABLE_HTML: 'IMMUTABLE_HTML',
+};
