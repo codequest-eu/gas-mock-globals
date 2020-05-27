@@ -19,9 +19,12 @@ const TextButton = require('./classes/TextButton');
 const TextInput = require('./classes/TextInput');
 const TextParagraph = require('./classes/TextParagraph');
 const UniversalActionResponseBuilder = require('./classes/UniversalActionResponseBuilder');
+const UpdateDraftActionResponseBuilder = require('./classes/UpdateDraftActionResponseBuilder');
+const UpdateDraftBodyAction = require('./classes/UpdateDraftBodyAction');
 
 // enums
-const ComposeEmailType = require('./enums/ComposedEmailType');
+const ComposeEmailType = require('./enums/ComposeEmailType');
+const ContentType = require('./enums/ContentType');
 const Icon = require('./enums/Icon');
 const ImageStyle = require('./enums/ImageStyle');
 const LoadIndicator = require('./enums/LoadIndicator');
@@ -30,123 +33,139 @@ const OnClose = require('./enums/OnClose');
 const OpenAs = require('./enums/OpenAs');
 const SelectionInputType = require('./enums/SelectionInputType');
 const TextButtonStyle = require('./enums/TextButtonStyle');
+const UpdateDraftBodyType = require('./enums/UpdateDraftBodyType');
 
 class CardService {
-  static newAction
-   () {
+  static newAction() {
     return new Action();
   }
 
-  static newActionResponseBuilder () {
+  static newActionResponseBuilder() {
     return new ActionResponseBuilder();
   }
 
-  static newAuthorizationAction () {
+  static newAuthorizationAction() {
     return new AuthorizationAction();
   }
 
-  static newButtonSet () {
+  static newUpdateDraftActionResponseBuilder() {
+    return new UpdateDraftActionResponseBuilder();
+  }
+
+  static newUpdateDraftBodyAction() {
+    return new UpdateDraftBodyAction();
+  }
+
+  static newButtonSet() {
     return new ButtonSet();
   }
 
-  static newCardAction () {
+  static newCardAction() {
     return new CardAction();
   }
 
-  static newCardBuilder () {
+  static newCardBuilder() {
     return new CardBuilder();
   }
 
-  static newCardHeader () {
+  static newCardHeader() {
     return new CardHeader();
   }
 
-  static newCardSection () {
+  static newCardSection() {
     return new CardSection();
   }
 
-  static newImage () {
+  static newImage() {
     return new Image();
   }
 
-  static newImageButton () {
+  static newImageButton() {
     return new ImageButton();
   }
 
-  static newKeyValue () {
+  static newKeyValue() {
     return new KeyValue();
   }
 
-  static newNavigation () {
+  static newNavigation() {
     return new Navigation();
   }
 
-  static newNotification () {
+  static newNotification() {
     return new Notification();
   }
 
-  static newOpenLink () {
+  static newOpenLink() {
     return new OpenLink();
   }
 
-  static newSelectionInput () {
+  static newSelectionInput() {
     return new SelectionInput();
   }
 
-  static newSuggestions () {
+  static newSuggestions() {
     return new Suggestions();
   }
 
-  static newTextButton () {
+  static newTextButton() {
     return new TextButton();
   }
 
-  static newTextInput () {
+  static newTextInput() {
     return new TextInput();
   }
 
-  static newTextParagraph () {
+  static newTextParagraph() {
     return new TextParagraph();
   }
 
-  static newUniversalActionResponseBuilder () {
+  static newUniversalActionResponseBuilder() {
     return new UniversalActionResponseBuilder();
   }
 
-  static get ComposeEmailType () {
+  static get ComposeEmailType() {
     return ComposeEmailType;
   }
 
-  static get Icon () {
+  static get Icon() {
     return Icon;
   }
 
-  static get ImageStyle () {
+  static get ImageStyle() {
     return ImageStyle;
   }
 
-  static get LoadIndicator () {
+  static get LoadIndicator() {
     return LoadIndicator;
   }
 
-  static get NotificationType () {
+  static get NotificationType() {
     return NotificationType;
   }
 
-  static get OnClose () {
+  static get OnClose() {
     return OnClose;
   }
 
-  static get OpenAs () {
+  static get OpenAs() {
     return OpenAs;
   }
 
-  static get SelectionInputType () {
+  static get SelectionInputType() {
     return SelectionInputType;
   }
 
-  static get TextButtonStyle () {
+  static get TextButtonStyle() {
     return TextButtonStyle;
+  }
+
+  static get ContentType() {
+    return ContentType;
+  }
+
+  static get UpdateDraftBodyType() {
+    return UpdateDraftBodyType;
   }
 }
 
