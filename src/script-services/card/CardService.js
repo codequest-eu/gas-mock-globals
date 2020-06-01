@@ -7,6 +7,7 @@ const CardAction = require('./classes/CardAction');
 const CardBuilder = require('./classes/CardBuilder');
 const CardHeader = require('./classes/CardHeader');
 const CardSection = require('./classes/CardSection');
+const ComposeActionResponseBuilder = require('./classes/ComposeActionResponseBuilder');
 const Image = require('./classes/Image');
 const ImageButton = require('./classes/ImageButton');
 const KeyValue = require('./classes/KeyValue');
@@ -46,6 +47,10 @@ class CardService {
 
   static newAuthorizationAction() {
     return new AuthorizationAction();
+  }
+
+  static newComposeActionResponseBuilder() {
+    return new ComposeActionResponseBuilder();
   }
 
   static newUpdateDraftActionResponseBuilder() {
