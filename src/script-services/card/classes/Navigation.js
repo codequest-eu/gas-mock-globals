@@ -20,6 +20,10 @@ class Navigation extends BaseClass {
     this._data.cards.push({ nav: 'pop', card: null });
     return this;
   }
+
+  popToRoot() {
+    this._data.cards.push({ nav: 'popToRoot', card: null });
+  }
 }
 
 module.exports = Navigation;
