@@ -23,6 +23,7 @@ class Navigation extends BaseClass {
 
   popToRoot() {
     this._data.cards.push({ nav: 'popToRoot', card: null });
+    return this;
   }
 }
 
