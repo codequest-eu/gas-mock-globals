@@ -2,6 +2,7 @@
 const Action = require('./classes/Action');
 const ActionResponseBuilder = require('./classes/ActionResponseBuilder');
 const AuthorizationAction = require('./classes/AuthorizationAction');
+const AuthorizationException = require('./classes/AuthorizationException');
 const ButtonSet = require('./classes/ButtonSet');
 const CardAction = require('./classes/CardAction');
 const CardBuilder = require('./classes/CardBuilder');
@@ -47,6 +48,10 @@ class CardService {
 
   static newAuthorizationAction() {
     return new AuthorizationAction();
+  }
+
+  static newAuthorizationException() {
+    return new AuthorizationException();
   }
 
   static newComposeActionResponseBuilder() {
